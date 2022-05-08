@@ -1,0 +1,99 @@
+:root {
+	--font-primary: 'Lucida Sans',
+	'Lucida Sans Regular',
+	'Lucida Grande',
+	'Lucida Sans Unicode',
+	Geneva,
+	Verdana,
+	sans-serif;
+	--color-primary: #1976D2;
+	--color-accent: #2196F3;
+}
+
+*, ::before, ::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: var(--font-primary)
+}
+
+h1 {
+	margin-bottom: 20px;
+}
+
+form {
+	padding: 20px;
+	width: 50%;
+}
+
+form input,
+textarea {
+	margin-bottom: 20px;
+	padding: 8px;
+	border: 0;
+	border-bottom: 1px solid;
+	width: 100%;
+	resize: none;
+	font-size: 16px;
+	outline: none;
+	font-family: var(--font-primary);
+}
+
+input[type="submit"] {
+	border: 0;
+	cursor: pointer;
+	background-color: #333;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 600;
+	transition: .5s;
+}
+
+input[type="submit"]:hover {
+	background-color: var(--color-accent);
+	transition: .5s;
+}
+
+table,
+th,
+td {
+	border: 1px solid;
+	border-collapse: collapse;
+	padding: 10px;
+}
+table {
+	width: 100%;
+}
+main {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.cta {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.cta a {
+	display: block;
+	width: 130px;
+	text-align: center;
+	margin-bottom: 12px;
+	padding: 10px 0;
+	text-decoration: none;
+	color: #fff;
+	background-color: #333;
+	border-radius: 8px;
+}
